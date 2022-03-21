@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BitPic_Prototype</string>
+    <string name="emailHint">Sign In with Email</string>
+</resources>
