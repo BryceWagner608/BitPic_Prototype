@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/community_person_search"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView" />
+    <item android:title="Communities">
+        <menu>
+            <item
+                android:id="@+id/nav_com1"
+                android:title="Community1" />
+            <item
+                android:id="@+id/nav_com2"
+                android:title="Community2" />
+            <item
+                android:id="@+id/nav_com3"
+                android:title="Community3" />
+            <item
+                android:id="@+id/nav_com4"
+                android:title="Community4" />
+            <item
+                android:id="@+id/nav_com5"
+                android:title="Community5" />
+        </menu>
+    </item>
+    <item android:title="People">
+
+        <menu>
+            <item
+                android:id="@+id/nav_person1"
+                android:title="person 1" />
+            <item
+                android:id="@+id/nav_person2"
+                android:title="person 2" />
+            <item
+                android:id="@+id/nav_person3"
+                android:title="person 3" />
+            <item
+                android:id="@+id/nav_person4"
+                android:title="person 4" />
+        </menu>
+        android:title="People"
+    </item>
+</menu>

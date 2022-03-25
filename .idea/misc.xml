@@ -7,7 +7,25 @@
         <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/drawable/login_bg.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/activity_login.xml" value="0.2477355072463768" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_community.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_create_account.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_explore.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_forgot_password.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_item2.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_item_list.xml" value="0.21" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_item_list2.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_login.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_testa.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_testa_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/fragment_user_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/layout/navigation_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/menu/bottom_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/menu/drawer_menu.xml" value="0.33" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
+        <entry key="..\:/Users/Big Pimpin'/AndroidStudioProjects/BitPic_Prototype/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2140625" />
       </map>
     </option>
   </component>
