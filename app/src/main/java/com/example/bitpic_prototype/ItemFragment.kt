@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import android.widget.Button
 import android.widget.FrameLayout
+import android.widget.ImageView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar;
 import com.example.bitpic_prototype.placeholder.PlaceholderContent
@@ -47,10 +48,18 @@ class ItemFragment : Fragment(), NavigationView.OnNavigationItemSelectedListener
         val view = inflater.inflate(R.layout.fragment_item_list, container, false)
         val toolbar: Toolbar = view.findViewById(R.id.toolbar)
         (activity as AppCompatActivity?)!!.setSupportActionBar(toolbar)
+        var profilebtn: ImageView = view.findViewById(R.id.profile)
         var bottomNav: BottomNavigationView = view.findViewById(R.id.bottomNavigationView)
         var drawer: DrawerLayout= view.findViewById(R.id.drawer_layout)
         var nav:NavigationView = view.findViewById(R.id.nav_view)
         nav.setNavigationItemSelectedListener(this)
+        toolbar.setTitle("")
+
+
+        profilebtn.setOnClickListener{
+            parentFragmentManager.beginTransaction().replace(R.id.fragment_container,UserProfileFragment()).commit()
+        }
+
         bottomNav.setOnItemSelectedListener{ item ->
             when (item.itemId) {
                 R.id.explore -> {
@@ -59,6 +68,9 @@ class ItemFragment : Fragment(), NavigationView.OnNavigationItemSelectedListener
                 }
                 R.id.home -> {
                     parentFragmentManager.beginTransaction().replace(R.id.fragment_container,ListFragment()).commit()
+                }
+                R.id.add -> {
+                    parentFragmentManager.beginTransaction().replace(R.id.fragment_container,CreateNew()).commit()
                 }
             }
             true
@@ -95,9 +107,39 @@ class ItemFragment : Fragment(), NavigationView.OnNavigationItemSelectedListener
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
             R.id.nav_com1 ->{
-                println("open com1")
-                //signUp.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_loginFragment_to_createAccount) }
                 parentFragmentManager.beginTransaction().replace(R.id.fragment_container, community()).commit()
+                true
+            }
+            R.id.nav_com2 ->{
+                parentFragmentManager.beginTransaction().replace(R.id.fragment_container, community()).commit()
+                true
+            }
+            R.id.nav_com3 ->{
+                parentFragmentManager.beginTransaction().replace(R.id.fragment_container, community()).commit()
+                true
+            }
+            R.id.nav_com4 ->{
+                parentFragmentManager.beginTransaction().replace(R.id.fragment_container, community()).commit()
+                true
+            }
+            R.id.nav_com5 ->{
+                parentFragmentManager.beginTransaction().replace(R.id.fragment_container, community()).commit()
+                true
+            }
+            R.id.nav_person1 ->{
+                parentFragmentManager.beginTransaction().replace(R.id.fragment_container, UserProfileFragment()).commit()
+                true
+            }
+            R.id.nav_person2 ->{
+                parentFragmentManager.beginTransaction().replace(R.id.fragment_container, UserProfileFragment()).commit()
+                true
+            }
+            R.id.nav_person3 ->{
+                parentFragmentManager.beginTransaction().replace(R.id.fragment_container, UserProfileFragment()).commit()
+                true
+            }
+            R.id.nav_person4 ->{
+                parentFragmentManager.beginTransaction().replace(R.id.fragment_container, UserProfileFragment()).commit()
                 true
             }
             R.id.community_person_search ->{

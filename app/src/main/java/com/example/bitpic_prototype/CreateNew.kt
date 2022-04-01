@@ -5,34 +5,28 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.bitpic_prototype.placeholder.PlaceholderContent
+import android.widget.ImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-private var columnCount = 1
 
 /**
  * A simple [Fragment] subclass.
- * Use the [community.newInstance] factory method to
+ * Use the [CreateNew.newInstance] factory method to
  * create an instance of this fragment.
  */
-class community : Fragment() {
+class CreateNew : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private var columnCount = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-            columnCount = it.getInt(ItemFragment.ARG_COLUMN_COUNT)
         }
     }
 
@@ -41,20 +35,22 @@ class community : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        val view =  inflater.inflate(R.layout.fragment_create_new, container, false)
 
-        val view = inflater.inflate(R.layout.fragment_community, container, false)
+        val image: ImageView = view.findViewById(R.id.imageView8)
+        val post: ImageView = view.findViewById(R.id.imageview13)
+        image.visibility = View.INVISIBLE
+        val attach: ImageView = view.findViewById(R.id.imageview12)
 
-
-        val rv: RecyclerView = view.findViewById(R.id.communitylist)
-        with(rv) {
-            layoutManager = when {
-                columnCount <= 1 -> LinearLayoutManager(context)
-                else -> GridLayoutManager(context, columnCount)
-            }
-            adapter = MyItemRecyclerViewAdapter(PlaceholderContent.ITEMS)
+        attach.setOnClickListener {
+            image.visibility = View.VISIBLE
         }
-        rv.setNestedScrollingEnabled(false);
+        post.setOnClickListener {
+            parentFragmentManager.beginTransaction().replace(R.id.fragment_container,ItemFragment()).commit()
+        }
+
         return view
+
     }
 
     companion object {
@@ -64,12 +60,12 @@ class community : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment community.
+         * @return A new instance of fragment CreateNew.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            community().apply {
+            CreateNew().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

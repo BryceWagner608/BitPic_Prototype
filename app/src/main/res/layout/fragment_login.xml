@@ -22,48 +22,53 @@
 
     <EditText
         android:id="@+id/etEmail"
-        android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/emailHint"
-        android:imeOptions="actionNext"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="16dp"
+        android:hint="@string/emailHint"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
         android:textSize="22sp" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:imeOptions="actionDone"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:hint="Enter Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
         android:textSize="22sp" />
+
     <Button
         android:id="@+id/btnForgotPwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="0dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:textAllCaps="false"
         android:layout_marginBottom="16dp"
-        android:text="Forgot Password?"/>
+        android:background="?android:attr/selectableItemBackground"
+        android:elevation="0dp"
+        android:text="Forgot Password?"
+        android:textAllCaps="false" />
+
     <Button
         android:id="@+id/btnSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGN IN"/>
+        android:layout_marginBottom="16dp"
+        android:text="SIGN IN" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
+
         <TextView
-            android:text="Don't have an account?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:text="Don't have an account?" />
 
         <Button
             android:id="@+id/btnUp"

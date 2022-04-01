@@ -3,46 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
-    <item
-        android:id="@+id/community_person_search"
-        android:title="Search"
-        app:actionViewClass="android.widget.SearchView" />
     <item android:title="Communities">
         <menu>
             <item
                 android:id="@+id/nav_com1"
-                android:title="Community1" />
+                android:title="Custom Loops" />
             <item
                 android:id="@+id/nav_com2"
-                android:title="Community2" />
+                android:title="Overclocking" />
             <item
                 android:id="@+id/nav_com3"
-                android:title="Community3" />
+                android:title="Hardware Swap" />
             <item
                 android:id="@+id/nav_com4"
-                android:title="Community4" />
+                android:title="Desktop battle stations" />
             <item
                 android:id="@+id/nav_com5"
-                android:title="Community5" />
+                android:title="Windows Errors" />
         </menu>
     </item>
     <item android:title="People">
-
         <menu>
             <item
                 android:id="@+id/nav_person1"
-                android:title="person 1" />
+                android:title="Bryce Wagner"
+                android:icon="@drawable/ic_baseline_chat_24"/>
             <item
                 android:id="@+id/nav_person2"
-                android:title="person 2" />
+                android:title="Ben Flink"
+                android:icon="@drawable/ic_baseline_chat_24"/>
             <item
                 android:id="@+id/nav_person3"
-                android:title="person 3" />
+                android:title="Brian Bauch"
+                android:icon="@drawable/ic_baseline_chat_24"/>
             <item
                 android:id="@+id/nav_person4"
-                android:title="person 4" />
+                android:title="Simon Baumgart"
+                android:icon="@drawable/ic_baseline_chat_24"/>
         </menu>
-        android:title="People"
     </item>
 </menu>

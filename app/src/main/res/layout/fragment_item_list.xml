@@ -25,18 +25,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@drawable/login_bg"
-                android:elevation="4dp"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                android:elevation="4dp">
+
                 <ImageView
                     android:id="@+id/profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:paddingRight="20dp"
-                    android:src="@drawable/ic_baseline_person_24"
-
-                    />
+                    android:src="@drawable/ic_baseline_person_24" />
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -68,13 +65,14 @@
                     app:menu="@menu/bottom_menu" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-                />
         </LinearLayout>
+
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/nav_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
+            android:background="@drawable/login_bg"
             app:menu="@menu/drawer_menu" />
     </androidx.drawerlayout.widget.DrawerLayout>
 
